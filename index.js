@@ -7,7 +7,7 @@ console.log(name)
 
 
 
-//addooioio
+//Fuck girls I hate em....
 
 //Ava+Ange
 //Avanta Gay boi suck chiraths dick disgusting
