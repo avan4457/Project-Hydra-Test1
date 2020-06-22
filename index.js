@@ -4,7 +4,7 @@ console.log(name)
 
 //test
 
-//avantha be like' gimme dick'
+//avantha be like' got no dick'
 
 
 //addooioio
