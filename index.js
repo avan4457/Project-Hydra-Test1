@@ -1,3 +1,3 @@
-let name = 'Chirath ponnaya'
+let name = 'Avantha  ponnaya loves Himasha Bitch'
 
 console.log(name)
