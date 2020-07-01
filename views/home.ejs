@@ -6,6 +6,15 @@
     <title>Home | Cityson</title>
 </head>
 <body>
-    <h1>User logged in</h1>
+    <h1>Angekumbura Trade Center</h1>
+    <div id="Category">
+       <ol> 
+        <%
+        Data.forEach(data=>{%>
+            <li><%=data.name %></li>
+        <% 
+        }) %>
+    </ol>
+    </div>
 </body>
 </html>
