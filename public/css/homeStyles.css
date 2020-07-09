@@ -1,4 +1,76 @@
 #logo {
     color: brown;
-    text-align: center;
+    text-align: left;
 }
+
+#imgBox{
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+#categoryImgBox{
+    width: 400px;
+    height: 550px;
+    overflow: hidden;
+
+    transition: transform 0.3s ease-out;
+}
+
+#categoryImgBox:hover{
+    transform: translateY(-14px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#catImg{
+    width:400px;
+    height:550px;
+    transition: transform .5s, filter .7s ease-in-out;
+  filter: brightness(100%);
+}
+
+#catImg:hover{
+    filter: brightness(120%);
+    transform: scale(1.1);
+}
+
+.textBox{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: -180px;
+
+    width:300px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    
+    
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+
+    /*transition: transform 0.3s ease-out;
+*/
+
+    
+}
+
+/*.textBox:hover{
+    
+    transform: translateY(-8px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}*/
+
+
+
+
+.text{
+    text-align: center;
+    font-family: Helvetica;
+    color:black;
+    font-size:18px;
+    padding: 5px;
+}
+
