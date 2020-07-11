@@ -137,4 +137,19 @@
     transition: transform 0.3s ease-out;
 }
 
+.items-section{
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.item-container{
+    box-sizing: content-box;
+    border-style: groove;
+    width:200px;
+    height:275px;
+}
 
+.item-container:hover{
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
