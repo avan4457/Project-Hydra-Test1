@@ -1,4 +1,78 @@
 <%- include('header.ejs'); -%>
 <p>Body elements...</p>
+<div id = "imgBox">
+
+<a href="#">
+     <div id="categoryImgBox"> 
+        <img id="catImg" src="\CategoryMainImages\img1.jpg" />
+        
+    </div> 
+
+    <div class="textBox1">
+        <p class="text">A car was passing along the road in front of the factory.</p>    
+    </div>
+        
+</a>
+
+<a href="#">
+    <div id="categoryImgBox"> 
+       <img id="catImg" src="\CategoryMainImages\img2.jpg" />
+            
+   </div> 
+    <div class="textBox2">
+        <p class="text">A car was passing along the road in front of the factory.</p>    
+    </div>
+
+</a>
+
+<a href="#">
+    <div id="categoryImgBox"> 
+       <img id="catImg" src="\CategoryMainImages\img3.jpg" />
+       
+   </div> 
+   <div class="textBox3">
+        <p class="text">A car was passing along the road in front of the factory.</p>    
+    </div>
+     
+</a>
+
+
+</div>
+
+<br>
+
+<!-- #region hot-new items-->
+<h1 id="hot-new">Hot & New</h1>
+<div class="items-section">
+    <% 
+    let i = 1;
+    while(i <= 4){ %>
+    <div id="item-<%=i %>" class="item-container">
+        content here..
+    </div>
+    <% 
+    i++; 
+    } 
+    %>
+</div>
+<!-- #endregion -->
+
+<!-- #region new-arrivals-->
+<h1 id="hot-new">New Arrivals</h1>
+<div class="items-section">
+    <% 
+    let j = 1;
+    while(j <= 4){ %>
+    <div id="item-<%=j %>" class="item-container">
+        content here..
+    </div>
+    <% 
+    j++; 
+    } 
+    %>
+</div>
+<br>
+<!-- #endregion -->
+
 </body>
 <%- include('footer.ejs'); -%>

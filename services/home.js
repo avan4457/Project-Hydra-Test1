@@ -1,4 +1,4 @@
-const conn = require('../database/connection');
+/*const conn = require('../database/connection');
 
 function getCategories(callback){
     conn.query('select * from category',(err,rows,fields)=>{
@@ -7,4 +7,4 @@ function getCategories(callback){
     })
 }
 
-module.exports.getCtgry = getCategories;
+module.exports.getCtgry = getCategories;*/
