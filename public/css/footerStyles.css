@@ -1,0 +1,30 @@
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+#icon{
+    display: flex;
+    justify-content: space-around; 
+}
+.topic{
+width:214px;
+height:44px;
+}
+#Contact {
+    margin-left: 10px;
+    background-position-x: 163;
+    background-position-y: 1951;
+}
+#About {
+    margin-left: 10px;
+    background-position-x: 457;
+    background-position-y: 1951;
+}
+#Locate {
+    margin-left: 10px;
+    background-position-x: 721;
+    background-position-y: 1951;
+}
