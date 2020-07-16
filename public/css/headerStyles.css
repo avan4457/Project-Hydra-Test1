@@ -1,24 +1,22 @@
-body,html{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: white !important;
-    }
-
     .searchbar{
     margin-bottom: auto;
     margin-top: auto;
-    height: 48px;
+    position: absolute;
+    /* height: 48px; */
     background-color: white;
+    border-width: 1px;
+    border-color: black;
     border-radius: 30px;
-    padding: 5px;
+    border-style: groove;
+    /* padding: 5px; */
     }
 
     .search_input{
     color:black;
     border: 0;
-    outline: 0;
+    margin-left: 10px;
+    outline: 3px;
+    height: 40px;
     background: none;
     width: 450px;
     caret-color:transparent;
@@ -28,9 +26,12 @@ body,html{
 
     .searchbar:hover > .search_input{
     padding: 0 10px;
+    height: 40px;
     width: 450px;
     caret-color:red;
     transition: width 0.4s linear;
+    border-color: black;
+    border-width: 3px;
     }
 
     .searchbar:hover > .search_icon{
@@ -46,7 +47,7 @@ body,html{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color:white;
+    color:rgb(10, 10, 10);
     text-decoration:none;
     }
 
@@ -54,8 +55,17 @@ body,html{
     background-color: black;
     }
 
-    
     #search-section{   
-        background-color: black;
-        }
-    
+        background-color: white;
+        height: 40px;
+    }
+
+    #cart{
+        position: absolute;
+        margin-left: 285px;
+    }
+
+    #h-btn-section{
+       position: absolute;
+       margin-left: 550px;
+    }
