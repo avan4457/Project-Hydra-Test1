@@ -35,16 +35,16 @@
 }
 
 .textBox2{
-    position: absolute;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    bottom: -180px;
+    bottom: 0px;
 
     width:300px;
     height: 100px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(72, 228, 66);
     
     
     border-style: solid;
@@ -58,12 +58,12 @@
 }
 
 .textBox1{
-    position: absolute;
+    position: relative;
     margin-left: 7%;
     margin-right: auto;
     left: 0;
     right: 0;
-    bottom: -180px;
+    bottom: 0px;
 
     width:300px;
     height: 100px;
@@ -81,12 +81,12 @@
 }
 
 .textBox3{
-    position: absolute;
+    position: relative;
     margin-left: auto;
     margin-right: 7%;
     left: 0;
     right: 0;
-    bottom: -180px;
+    bottom: 0px;
 
     width:300px;
     height: 100px;
@@ -147,9 +147,11 @@
     border-style: groove;
     width:200px;
     height:275px;
+    transition: transform 0.3s ease-out;
 }
 
 .item-container:hover{
-    transform: scale(1.1);
-    transition-duration: 500ms;
+    transform: scale(1.03);
+    
+
 }
