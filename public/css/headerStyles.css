@@ -8,6 +8,8 @@
     border-color: black;
     border-radius: 30px;
     border-style: groove;
+    width:450px;
+    height:35px;
     /* padding: 5px; */
     }
 
@@ -16,7 +18,7 @@
     border: 0;
     margin-left: 10px;
     outline: 3px;
-    height: 40px;
+    height: 45px;
     background: none;
     width: 450px;
     caret-color:transparent;
@@ -28,7 +30,7 @@
     padding: 0 10px;
     height: 40px;
     width: 450px;
-    caret-color:red;
+    caret-color:black;
     transition: width 0.4s linear;
     border-color: black;
     border-width: 3px;
@@ -36,7 +38,7 @@
 
     .searchbar:hover > .search_icon{
     background: white;
-    color: #e74c3c;
+    color:red;
     }
 
     .search_icon{
@@ -49,23 +51,80 @@
     border-radius: 50%;
     color:rgb(10, 10, 10);
     text-decoration:none;
+    margin-top: -50px;
     }
 
+    /*#header-container-full{
+        position: relative;
+
+    }*/
+
     #logo{
-    background-color: black;
+    background-color: #212422;
+    height: 100px;
+    width: 100%;
+    position: relative;
     }
 
     #search-section{   
-        background-color: white;
+        position: relative;
+        /*background-color: rgba(182, 29, 29, 0);*/
         height: 40px;
-    }
+        margin-top: -90px;
+        margin-left: 150px;
+        
+        }
 
     #cart{
-        position: absolute;
-        margin-left: 285px;
+        position: relative;
+        margin-left: 550px;
+        background-color: #e74c3c;
     }
 
     #h-btn-section{
        position: absolute;
-       margin-left: 550px;
+       margin-left: 750px;
+    }
+
+    #img{
+        position:relative;
+        height:80px;
+        width: 400px;
+        margin-top: -10px;
+        margin-left: -20px;
+    }
+
+    #taskbar{
+        position: relative;
+        display: flex;
+        justify-content: center;
+       
+        
+        
+        
+    }
+
+    #taskbarBox{
+        margin-top: -22px;
+        width:120px;
+        height:35px;
+        background-color: #2c302e;
+        transition:  0.3s ease-out;
+    }
+
+    #taskbarBox:hover{
+        transform: translateY(8px);
+        background-color: #a31719;
+        
+            
+    } 
+
+    #categorytext{
+        text-align: center;
+        color: honeydew;
+        padding:2px;
+    }
+
+    #categorytextlink{
+        text-decoration: none;
     }
