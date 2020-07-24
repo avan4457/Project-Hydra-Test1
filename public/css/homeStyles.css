@@ -36,7 +36,7 @@
     transform: scale(1.2);
 }
 
-.textBox2{
+.textBox{
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -46,89 +46,24 @@
 
     width:250px;
     height: 80px;
-    background-color: rgb(255, 255, 255);
+    background-color:linen;
     
     
     border-style: solid;
-    border-color: rgb(255, 255, 255);
+    border-color:linen;
     border-width: 2px;
 
     transition: transform 0.3s ease-out;
     
-
-
-    
 }
 
-.textBox1{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-
-    width:250px;
-    height: 80px;
-    background-color: rgb(255, 255, 255);
-    
-    
-    border-style: solid;
-    border-color: white;
-    border-width: 2px;
-
-    transition: transform 0.3s ease-out;
-
-
-    
-}
-
-.textBox3{
-    position: relative;
-    margin-left: auto;
-    margin-right: 7%;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-
-    width:250px;
-    height: 80px;
-    background-color: rgb(255, 255, 255);
-    
-    
-    border-style: solid;
-    border-color: white;
-    border-width: 2px;
-
-    transition: transform 0.3s ease-out;
-    
-
-    
-}
-
-#categoryImgBox:hover ~ .textBox2{
+#categoryImgBox:hover ~ .textBox{
     
     transform: translateY(-80px);
     border-color:white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
-
-#categoryImgBox:hover ~ .textBox1{
-    
-    transform: translateY(-80px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-color:white;
-    
-}
-
-#categoryImgBox:hover ~ .textBox3{
-    
-    transform: translateY(-80px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-color:white;
-}
-
 
 .text{
     text-align: center;

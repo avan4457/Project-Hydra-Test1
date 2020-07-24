@@ -9,7 +9,9 @@ router.use(parser.urlencoded({extended:false}));
 router.use(parser.json());
 
 router.get('/',(req,res)=>{
-    res.render('index');
+    home.getCtgry((rows)=>{
+    res.render('index',{titlehead:'Categories', Data:rows});
+    })
 })
 
 router.post('/form-login-action',(req,res)=>{
@@ -20,11 +22,5 @@ router.post('/form-login-action',(req,res)=>{
     else
         res.send('Login pressed');
 })
-
-router.get('/',(req,res)=>{
-        home.getCtgry((rows)=>{
-            res.render('home',{titlehead:'Categories', Data:rows});
-        })
-});
 
 module.exports = router;
