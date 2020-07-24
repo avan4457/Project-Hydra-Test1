@@ -2,41 +2,45 @@
     margin-bottom: auto;
     margin-top: auto;
     position: absolute;
-    /* height: 48px; */
+    height: 48px;
     background-color: white;
     border-width: 1px;
     border-color: black;
     border-radius: 30px;
     border-style: groove;
-    /* padding: 5px; */
+    width:450px;
+    height:35px;
+    padding: 5px;
     }
 
     .search_input{
     color:black;
     border: 0;
     margin-left: 10px;
+    margin-top: -5px;
     outline: 3px;
-    height: 40px;
+    height: 45px;
     background: none;
     width: 450px;
     caret-color:transparent;
     line-height: 40px;
     transition: width 0.4s linear;
+    padding-bottom: 20px;
     }
 
     .searchbar:hover > .search_input{
-    padding: 0 10px;
     height: 40px;
     width: 450px;
-    caret-color:red;
+    caret-color: red;
     transition: width 0.4s linear;
     border-color: black;
     border-width: 3px;
+    margin-left: 20px;
     }
 
     .searchbar:hover > .search_icon{
-    background: white;
-    color: #e74c3c;
+    color:red;
+    margin-top: -48px;
     }
 
     .search_icon{
@@ -49,23 +53,76 @@
     border-radius: 50%;
     color:rgb(10, 10, 10);
     text-decoration:none;
-    }
-
-    #logo{
-    background-color: black;
+    margin-top: -50px;
     }
 
     #search-section{   
-        background-color: white;
+        position: relative;
         height: 40px;
-    }
+        margin-top: -80px;
+        margin-left: 5%;   
+        }
 
     #cart{
-        position: absolute;
-        margin-left: 285px;
+        position: relative;
+        margin-left: 780px;
+        color:white;
+    }
+
+    #cart:hover{
+        color: red;
     }
 
     #h-btn-section{
-       position: absolute;
-       margin-left: 550px;
+       position: relative;
+       margin-left: 120px;
     }
+
+    #img{
+        position:relative;
+        height:80px;
+        width: 400px;
+        margin-top: -10px;
+        margin-left: -20px;
+    }
+
+    
+    #categorytextlink{
+        text-decoration: none;
+    }
+
+/* Style the top navigation bar */
+.navbar {
+    margin-top: -8px;
+    display: flex;
+    background-color:transparent;
+    justify-content: center;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    color: black;
+    padding: 8px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid darkgray;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    border: 1px solid darkgray;
+    border-top: none;
+    border-bottom: none;
+    color: blue;
+    text-decoration: underline;
+  }
+
+  #login-btn{
+    border-color: white;
+    color: white;
+  }
+
+  #login-btn:hover{
+      color: black;
+      background-color: white;
+  }

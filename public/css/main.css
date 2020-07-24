@@ -7,10 +7,6 @@ body{
 	color:#777;
 }
 
-/*p{
-	margin:0;
-}*/
-
 a {
     color: #aa0a5f;
 }
@@ -110,9 +106,10 @@ section p {
 }
 
 .logo {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     padding-left: 30px;
-    padding-top: 70px;
+    padding-top: 40px;
+    background-color: #212422;
 }
 .logo h1{
     color: #fff;
@@ -207,13 +204,12 @@ section p {
     margin-bottom: 10px;
 }
 
-#twitter-feed li,
-#flickr li {
+#social-footer2 li{
     line-height: 25px;
     margin-bottom: 10px;
 }
 
-#twitter-feed img {
+#social-footer2 img {
     border: 1px solid #ddd;
     box-shadow: 2px 3px 3px #ddd;
     height: auto;

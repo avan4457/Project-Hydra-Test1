@@ -1,4 +1,4 @@
-footer .main-footer{	padding: 20px 0;	background: #252525;}
+footer .main-footer{	padding: 20px 0;	background: #ebf5f3;}
 footer ul{	padding-left: 0;	list-style: none;}
 /* .container{
     display: flex;
@@ -59,7 +59,7 @@ footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255
 
 ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
 ul.social-footer2 li {display: inline-block;padding: 0;}
-ul.social-footer2 li a:hover {background-color:#ff8d1e;}
+ul.social-footer2 li a:hover {background-color:#ff8f1e00;}
 ul.social-footer2 li a {display: block;	height:30px;width: 30px;text-align: center;}
 .btn{background-color: #ff8d1e; color:#fff;}
 .btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;

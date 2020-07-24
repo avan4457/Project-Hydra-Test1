@@ -1,39 +1,18 @@
 <%- include('header.ejs'); -%>
-<p>Body elements...</p><br>
+<br>
 <div id = "imgBox">
-
-    <% for(let i = 0;i < 4;i++){ %>
+<% for(let i = 0; i < 5; i++){ %>
+<a href="#" id="linktext">
      <div id="categoryImgBox"> 
         <img id="catImg" src="\CategoryMainImages\<%=Data[i].categoryImg %>" />
         
     </div> 
-    <% } %>
-    <div class="textBox1">
-        <p class="text">A car was passing along the road in front of the factory.</p>    
+    <div class="textBox">
+        <p class="text"><%=Data[i].name %></p>    
     </div>
         
-<!-- <a href="#">
-    <div id="categoryImgBox"> 
-       <img id="catImg" src="\CategoryMainImages\img2.jpg" />
-            
-   </div>  -->
-    <div class="textBox2">
-        <p class="text">A car was passing along the road in front of the factory.</p>    
-    </div>
-
-<!-- </a> -->
-<!-- 
-<a href="#">
-    <div id="categoryImgBox"> 
-       <img id="catImg" src="\CategoryMainImages\img3.jpg" />
-       
-   </div>  -->
-   <div class="textBox3">
-        <p class="text">A car was passing along the road in front of the factory.</p>    
-    </div>
-     
-<!-- </a> -->
-
+</a>
+<% } %>
 
 </div>
 
