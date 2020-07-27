@@ -71,6 +71,8 @@
 
     #cart:hover{
         color: red;
+        transition-duration: 0.3s;
+        cursor: pointer;
     }
 
     #h-btn-section{
@@ -95,13 +97,13 @@
 .navbar {
     margin-top: -8px;
     display: flex;
-    background-color:transparent;
+    background-color: #212422;
     justify-content: center;
   }
   
   /* Style the navigation bar links */
   .navbar a {
-    color: black;
+    color: white;
     padding: 8px 20px;
     text-decoration: none;
     text-align: center;
@@ -113,8 +115,10 @@
     border: 1px solid darkgray;
     border-top: none;
     border-bottom: none;
-    color: blue;
-    text-decoration: underline;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    transition-duration:0.3s;
   }
 
   #login-btn{
