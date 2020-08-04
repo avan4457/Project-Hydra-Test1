@@ -1,5 +1,10 @@
 <%- include('header.ejs'); -%>
+<div id = "mainBody">
 <br>
+
+
+
+
 <div id = "imgBox">
 <% for(let i = 0; i < 5; i++){ %>
 <a href="#" id="linktext">
@@ -19,7 +24,7 @@
 <br>
 
 <!-- #region hot-new items-->
-<h1 id="hot-new">Hot</h1><br><br>
+<h1 id="hot-new">Popular Products</h1><br><br>
 <div class="items-section">
     <% 
     let i = 1;
@@ -36,7 +41,7 @@
 <!-- #endregion -->
 
 <!-- #region new-arrivals-->
-<h1 id="hot-new">New Arrivals</h1><br><br>
+<h1 id="hot-new" style="margin-top: -30px;">New Arrivals</h1><br><br>
 <div class="items-section">
     <% 
     let j = 1;
@@ -50,6 +55,8 @@
     %>
 </div>
 <br>
+
+</div>
 <!-- #endregion -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
