@@ -1,0 +1,27 @@
+<%- include ('header.ejs'); -%>
+<body>
+    <h1>Add Product</h1>
+    <div class="col-md-3 offset-md-1" style="background-color: #d0d0e1;">
+    <form action="/add-product" method="POST">
+        <br>
+        Product Id: <input class="form-control" type="text" name="id" /><br>
+        Product Name: <input class="form-control" type="text" name="name" /><br>
+        Main Category: 
+        <select name="MainCategory" class="form-control">
+            <% Data.forEach(data=>{ %>
+            <option>        
+                    <%=data.name %>
+            </option>
+        <% }) %>
+        </select>
+<br>
+        Sub Category:<br>
+        Quantity: <input class="form-control" type="text" name="qty" /><br>
+        Stock Price: <input class="form-control" type="text" name="stkPrice" /><br>
+        Selling Price: <input class="form-control" type="text" name="sellPrice" /><br>
+        Margin Price: <input class="form-control" type="text" name="marginPrice" /><br>
+        <input class="btn btn-outline-submit" name="submit" value="submit" /><br><br>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,5 +1,6 @@
 const express = require('express');
-const home = require('../services/home');
+const home = require('../services/productServices');
+const product = require('../services/productServices');
 const parser = require('body-parser');
 
 let router = express.Router();
@@ -13,6 +14,16 @@ router.get('/',(req,res)=>{
     res.render('index',{titlehead:'Categories', Data:rows});
     })
 })
+
+router.get('/addProduct', (req,res)=>{
+    home.getCtgry((rows)=>{
+        res.render('addProduct',{titlehead:'Main Categories', Data:rows});
+    })
+})
+
+// router.post('/add-product', (req,res)=>{
+
+// })
 
 router.post('/form-login-action',(req,res)=>{
     console.log(req.body.submit);
