@@ -10,20 +10,20 @@ router.use(parser.urlencoded({extended:false}));
 router.use(parser.json());
 
 router.get('/',(req,res)=>{
-    home.getCtgry((rows)=>{
+    product.getCtgry((rows)=>{
     res.render('index',{titlehead:'Categories', Data:rows});
     })
 })
 
 router.get('/addProduct', (req,res)=>{
-    home.getCtgry((rows)=>{
-        res.render('addProduct',{titlehead:'Main Categories', Data:rows});
+    let sub;
+    product.getSub((fields)=>{
+        sub = fields;
+    })
+    product.getCtgry((rows)=>{
+        res.render('addProduct',{titlehead:'Categories', Data:rows, SubData:sub});
     })
 })
-
-// router.post('/add-product', (req,res)=>{
-
-// })
 
 router.post('/form-login-action',(req,res)=>{
     console.log(req.body.submit);
