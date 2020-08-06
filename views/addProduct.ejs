@@ -7,20 +7,31 @@
         Product Id: <input class="form-control" type="text" name="id" /><br>
         Product Name: <input class="form-control" type="text" name="name" /><br>
         Main Category: 
-        <select name="MainCategory" class="form-control">
+        <select name="MainCategory" class="form-control" onforminput="">
             <% Data.forEach(data=>{ %>
             <option>        
                     <%=data.name %>
             </option>
-        <% }) %>
+            <% }) %>
         </select>
 <br>
-        Sub Category:<br>
+        Sub Category:
+        <select name="SubCategory" class="form-control" onforminput="">
+            <% for(let i=0;i < SubData.length;i++){ %>
+                <% if(SubData[i].name === 'id' || SubData[i].name === 'categoryId' || SubData[i].name === 'Type' || SubData[i].name === 'type'){ 
+                    continue;
+                    }
+                    %>
+            <option>
+                <%=SubData[i].name %>
+            </option>
+            <% } %>
+        </select><br>
         Quantity: <input class="form-control" type="text" name="qty" /><br>
         Stock Price: <input class="form-control" type="text" name="stkPrice" /><br>
         Selling Price: <input class="form-control" type="text" name="sellPrice" /><br>
         Margin Price: <input class="form-control" type="text" name="marginPrice" /><br>
-        <input class="btn btn-outline-submit" name="submit" value="submit" /><br><br>
+        <input class="btn btn-outline-submit" name="submit" value="submit" type="submit"/><br><br>
     </form>
     </div>
 </body>
