@@ -1,19 +1,15 @@
-<%- include('header.ejs'); -%>
+<%- include('partials/header.ejs') %>
 <div id = "mainBody">
 <br>
-
-
-
 
 <div id = "imgBox">
 <% for(let i = 0; i < 5; i++){ %>
 <a href="#" id="linktext">
      <div id="categoryImgBox"> 
-        <img id="catImg" src="\CategoryMainImages\<%=Data[i].categoryImg %>" />
         
     </div> 
     <div class="textBox">
-        <p class="text"><%=Data[i].name %></p>    
+        <p class="text">test</p>    
     </div>
         
 </a>
@@ -62,4 +58,4 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="Jj23YxA2"></script>
 </body>
-<%- include('footer.ejs'); -%>
+<%- include('partials/footer.ejs') %>

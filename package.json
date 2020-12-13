@@ -1,0 +1,24 @@
+{
+  "name": "project_hydra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avan4457/Project_Hydra.git"
+  },
+  "author": "hydra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avan4457/Project_Hydra/issues"
+  },
+  "homepage": "https://github.com/avan4457/Project_Hydra#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "firebase": "^8.2.0"
+  }
+}
