@@ -12,7 +12,6 @@
     
     display: flex;
     justify-content: space-between;
-    /*padding-left: 40px;*/
     padding: 10px;
     background-color: #ffffff;
     border-color: rgb(221, 220, 220);
@@ -20,11 +19,13 @@
     border-width: 1px;
     margin:30px;
     border-radius: 3px;
-
-
 }
 
-#categoryImgBox{
+#imgBox a{
+    padding: 8px 20px;
+}
+
+.categoryImgBox{
     width: 250px;
     height: 350px;
     
@@ -33,7 +34,7 @@
     transition: transform 0.3s ease-out;
 }
 
-#categoryImgBox:hover{
+.categoryImgBox:hover{
     transform: translateY(-8px);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -69,7 +70,7 @@
     
 }
 
-#categoryImgBox:hover ~ .textBox{
+.categoryImgBox:hover ~ .textBox{
     
     transform: translateY(-80px);
     border-color:white;
