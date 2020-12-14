@@ -168,7 +168,7 @@
     position: relative;
     height: 40px;
     margin-top: 0px;
-    margin-left: -80px;   
+    margin-left: -120px;   
     }
 
     #h-btn-section{
@@ -176,5 +176,13 @@
         margin-left: 10px;
         margin-top: 40px;
      }
+
+     #img{
+        position:relative;
+        width:60%;
+        height:50%;
+        margin-top: -10px;
+        margin-left: 20%;
+    }
 
 }
