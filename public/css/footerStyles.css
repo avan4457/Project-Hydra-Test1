@@ -67,3 +67,9 @@ transition: all 250ms ease-in-out 0s;
 .social-icon:hover{
     opacity: 70%;
 }
+
+@media screen and (max-width: 768px){
+    .widget{
+        align-content: center;
+    }
+}
