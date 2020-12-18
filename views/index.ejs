@@ -4,15 +4,14 @@
 
 <div id = "imgBox">
 <% for(let i = 0; i < 5; i++){ %>
-<a href="#" id="linktext">
-     <div class="categoryImgBox"> 
+<a href="#" >
+    <div class="categoryImgBox"> 
         <img src="images/Cart.png" >
     </div> 
     <div class="textBox">
         <p class="text">test</p>    
     </div>
-        
-</a>
+</a>      
 <% } %>
 
 </div>
@@ -25,9 +24,12 @@
     <% 
     let i = 1;
     while(i <= 4){ %>
-    <div id="item-<%=i %>" class="item-container">
-        content here..
-    </div>
+    <a href="#" id="item-<%=i %>" class="item-container" style="text-decoration: none;">
+        <p>A paragraph is a series of related sentences developing a central idea, 
+            called the topic. Try to think about paragraphs in terms of thematic unity:
+             a paragraph is a sentence or a group of sentences that supports one central, unified idea. 
+             Paragraphs add one idea at a time to your broader argument.</p>
+    </a>
     <% 
     i++; 
     } 
@@ -42,9 +44,12 @@
     <% 
     let j = 1;
     while(j <= 4){ %>
-    <div id="item-<%=j %>" class="item-container">
-        content here..
-    </div>
+    <a href="#" id="item-<%=j %>" class="item-container" style="text-decoration: none;">
+        <p>A paragraph is a series of related sentences developing a central idea, 
+            called the topic. Try to think about paragraphs in terms of thematic unity:
+             a paragraph is a sentence or a group of sentences that supports one central, unified idea. 
+             Paragraphs add one idea at a time to your broader argument.</p>
+    </a>
     <% 
     j++; 
     } 
@@ -57,5 +62,9 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="Jj23YxA2"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js" ></script>
+<script src="/menu.js"></script>
+<script src="/configStyles.js" ></script>
+<script src = "https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js" async></script>
 </body>
 <%- include('partials/footer.ejs') %>

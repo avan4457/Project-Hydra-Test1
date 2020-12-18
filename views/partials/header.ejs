@@ -28,7 +28,11 @@
 <body id="welcome">
    <title><%= title %> | Angekumbura</title>
 <div class="logo">
-      <img id="img" src="/images/Cityson_Logo_max.png">
+  <picture>
+    <!-- <source srcset="/images/casrtWHite.jpg" media="(max-width: 480px)"> add small sized logo-->
+    <!-- <source srcset="/images/cart.png" media="(max-width: 768px)">  add medium sized logo-->
+    <img id="img" srcset="/images/Cityson_Logo_max.png">
+    </picture>
 <div id="search-section">
    <div class="container h-100">
       <div class="d-flex justify-content-center h-100">
@@ -47,6 +51,7 @@
 </div>
 
 <!-- Navigation Bar -->
+<!-- <a class="ham-burger"></a> -->
 <div class="navbar">
    <% for(let i=0; i<8; i++){ %>
    <a href="#">category</a>
